@@ -53,9 +53,9 @@ class FeatureEngineer:
             labels=['low', 'mid', 'high', 'penthouse']
         )
         
-        # Neighborhood desirability score
-        df_processed['neighborhood_score'] = (
-            (10 - df_processed['neighborhood_crime_rate']) * 0.3 +
+        # Neighbourhood desirability score
+        df_processed['neighbourhood_score'] = (
+            (10 - df_processed['neighbourhood_crime_rate']) * 0.3 +
             (5 - df_processed['distance_to_subway']) * 0.2 +
             (25 - df_processed['distance_to_downtown']) * 0.1 +
             (df_processed['nearby_restaurants'] / 30) * 0.2 +

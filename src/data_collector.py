@@ -40,7 +40,7 @@ class DataCollector:
             'has_gym': np.random.choice([0, 1], n_samples, p=[0.5, 0.5]),
             'has_parking': np.random.choice([0, 1], n_samples, p=[0.4, 0.6]),
             'pet_friendly': np.random.choice([0, 1], n_samples, p=[0.3, 0.7]),
-            'neighborhood_crime_rate': np.random.normal(5, 2, n_samples).clip(1, 10),
+            'neighbourhood_crime_rate': np.random.normal(5, 2, n_samples).clip(1, 10),
             'distance_to_subway': np.random.exponential(0.5, n_samples).clip(0.1, 5),
             'distance_to_downtown': np.random.normal(8, 4, n_samples).clip(1, 25),
             'nearby_restaurants': np.random.poisson(15, n_samples),
@@ -61,7 +61,7 @@ class DataCollector:
             df['has_gym'] * 150 +
             df['has_parking'] * 180 +
             df['pet_friendly'] * 50 +
-            (10 - df['neighborhood_crime_rate']) * 50 +
+            (10 - df['neighbourhood_crime_rate']) * 50 +
             (5 - df['distance_to_subway']) * 100 +
             (25 - df['distance_to_downtown']) * 20 +
             df['nearby_restaurants'] * 5 +

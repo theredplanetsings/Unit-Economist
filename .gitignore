@@ -154,10 +154,10 @@ data/external/
 *.json
 *.xlsx
 
-# Visualization outputs (optional - comment out if you want to include plots)
-# visualizations/*.png
-# visualizations/*.jpg
-# visualizations/*.pdf
+# Visualisation outputs (optional - comment out if you want to include plots)
+# visualisations/*.png
+# visualisations/*.jpg
+# visualisations/*.pdf
 
 # API logs
 api.log

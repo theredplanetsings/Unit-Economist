@@ -17,7 +17,7 @@ from visualizer import ModelVisualizer
 
 def demo_prediction_pipeline():
     """Demonstrate the complete prediction pipeline."""
-    print("🏠 Apartment Rent Prediction Demo")
+    print("Apartment Rent Prediction Demo")
     print("=" * 40)
     
     # 1. Load or create sample data
@@ -67,7 +67,7 @@ def demo_prediction_pipeline():
             'bedrooms': 2, 'bathrooms': 1.5, 'square_feet': 1000, 'floor': 5,
             'building_age': 10, 'latitude': 40.7831, 'longitude': -73.9712,
             'has_elevator': True, 'has_doorman': False, 'has_gym': True,
-            'has_parking': True, 'pet_friendly': True, 'neighborhood_crime_rate': 3.5,
+            'has_parking': True, 'pet_friendly': True, 'neighbourhood_crime_rate': 3.5,
             'distance_to_subway': 0.3, 'distance_to_downtown': 5, 'nearby_restaurants': 20,
             'nearby_schools_rating': 8.5, 'building_type': 'apartment', 'heating_type': 'central'
         },
@@ -103,7 +103,7 @@ def demo_prediction_pipeline():
         print(f"   • Building type: {apt['building_type']}")
         print(f"   • Distance to subway: {apt['distance_to_subway']} miles")
         print(f"   • Amenities: Elevator({apt['has_elevator']}), Doorman({apt['has_doorman']}), Gym({apt['has_gym']})")
-        print(f"   🔮 Predicted rent: ${predicted_rent:.2f}/month")
+        print(f"   Predicted rent: ${predicted_rent:.2f}/month")
     
     # 5. Feature importance
     print("\\n5. Top features influencing rent:")
@@ -125,7 +125,7 @@ def demo_prediction_pipeline():
 def demo_cost_prediction():
     """Demo for predicting both rent and operational costs."""
     print("\\n" + "=" * 40)
-    print("💰 Cost Prediction Extension Demo")
+    print("Cost Prediction Extension Demo")
     print("=" * 40)
     
     # Create sample data with additional cost features

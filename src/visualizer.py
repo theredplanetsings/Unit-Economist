@@ -10,7 +10,7 @@ import logging
 
 class ModelVisualizer:
     """
-    Creates visualizations for apartment rent prediction models.
+    Creates visualisations for apartment rent prediction models.
     """
     
     def __init__(self):
@@ -268,7 +268,7 @@ class ModelVisualizer:
         plt.show()
 
 if __name__ == "__main__":
-    # Test visualization with sample data
+    # Test visualisation with sample data
     from data_collector import DataCollector
     
     collector = DataCollector()

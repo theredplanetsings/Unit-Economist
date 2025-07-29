@@ -1,21 +1,35 @@
-# Unit-Economist: Apartment Rent Prediction System 🏠💰
+# Unit-Economist: Apartment Rent Prediction System
 
-A production-ready machine learning system for predicting apartment rent prices with **97.31% accuracy**. Built as a comprehensive unit economics platform foundation for real estate pricing, market analysis, and rental optimization.
+A production-ready machine learning system for predicting apartment rent prices with **97.31% accuracy**. Built - **`GET /docs`** - Interactiv   └── visualisations/
+       ├── data_distribution.png   # Dataset analysis
+       ├── model_comparison.png    # Performance comparison
+       ├── xgboost_predictions.png # Prediction vs actual
+       ├── xgboost_feature_importance.png
+       ├── price_trends.png       # Market analysis
+       └── rent_map.html          # Interactive NYC mapocumentation
 
-## 🎯 Project Overview
+## Project Archite## Rich Analytics & Visualisations
+
+The system a## Production Deployment & Scaling
+
+### **Current State: Production Ready**
+- **API Service**: Tested and validated prediction endpoint
+- **Model Pipeline**: Complete data to features to prediction workflowtically generates comprehensive analysis during training:a comprehensive unit economics platform foundation for real estate pricing, market analysis, and rental optimisation.
+
+## Project Overview
 
 This system implements state-of-the-art machine learning models to predict apartment rental prices with exceptional accuracy. The XGBoost model achieves **97.31% R² score** with only **$166.99 RMSE**, making it suitable for real-world deployment in real estate applications.
 
-### 🏆 Key Achievements
+### Key Achievements
 
-- **🎯 97.31% Accuracy**: XGBoost model with industry-leading performance
-- **⚡ Real-time API**: Sub-second prediction responses via FastAPI
-- **📊 27 Features**: Advanced feature engineering pipeline
-- **🗺️ Interactive Maps**: Geographic rent distribution analysis
-- **🔄 Complete Pipeline**: End-to-end ML workflow from data to deployment
-- **📈 8 Models Tested**: Comprehensive algorithm comparison and optimization
+- **97.31% Accuracy**: XGBoost model with industry-leading performance
+- **Real-time API**: Sub-second prediction responses via FastAPI
+- **27 Features**: Advanced feature engineering pipeline
+- **Interactive Maps**: Geographic rent distribution analysis
+- **Complete Pipeline**: End-to-end ML workflow from data to deployment
+- **8 Models Tested**: Comprehensive algorithm comparison and optimisation
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -60,7 +74,7 @@ Visit `http://localhost:8000` for API documentation or `http://localhost:8000/do
 python demo.py
 ```
 
-## 📊 Live Model Performance
+## Live Model Performance
 
 **Latest Training Results:**
 - **Best Model**: XGBoost 
@@ -72,15 +86,15 @@ python demo.py
 **Model Comparison:**
 | Model | Test R² | RMSE | Speed | Production Ready |
 |-------|---------|------|-------|------------------|
-| **XGBoost** | **97.31%** | **$166.99** | Fast | ✅ **Deployed** |
-| Gradient Boosting | 97.01% | $175.99 | Fast | ✅ |
-| LightGBM | 96.91% | $178.98 | Fastest | ✅ |
-| Lasso | 96.34% | $194.91 | Fastest | ✅ |
-| Linear Regression | 96.33% | $195.17 | Fastest | ✅ |
-| Ridge | 96.33% | $195.20 | Fastest | ✅ |
-| Random Forest | 95.40% | $218.38 | Medium | ✅ |
+| **XGBoost** | **97.31%** | **$166.99** | Fast | **Deployed** |
+| Gradient Boosting | 97.01% | $175.99 | Fast | Yes |
+| LightGBM | 96.91% | $178.98 | Fastest | Yes |
+| Lasso | 96.34% | $194.91 | Fastest | Yes |
+| Linear Regression | 96.33% | $195.17 | Fastest | Yes |
+| Ridge | 96.33% | $195.20 | Fastest | Yes |
+| Random Forest | 95.40% | $218.38 | Medium | Yes |
 
-## 🌐 Production API Usage
+## Production API Usage
 
 ### Real-time Predictions
 
@@ -168,17 +182,17 @@ print(f"Predicted Monthly Rent: ${result['predicted_rent']:,.2f}")
 
 ```
 Unit-Economist/
-├── 🔧 Core ML Pipeline
+├── Core ML Pipeline
 │   ├── src/
 │   │   ├── data_collector.py       # NYC apartment data generation
 │   │   ├── feature_engineering.py  # 27 feature transformation pipeline
 │   │   ├── model_trainer.py        # 8-model training & comparison
-│   │   ├── visualizer.py           # Analytics & visualization engine
+│   │   ├── visualizer.py           # Analytics & visualisation engine
 │   │   └── api.py                  # Production FastAPI service
 │   ├── train.py                    # Main training orchestrator
 │   └── demo.py                     # Quick demonstration script
 │
-├── 📊 Generated Assets (created by train.py)
+├── Generated Assets (created by train.py)
 │   ├── models/
 │   │   ├── xgboost.pkl            # Best model (97.31% accuracy)
 │   │   ├── feature_engineer.pkl   # Fitted preprocessing pipeline
@@ -192,84 +206,86 @@ Unit-Economist/
 │       ├── price_trends.png       # Market analysis
 │       └── rent_map.html          # Interactive NYC map
 │
-├── 📋 Configuration
+├── Configuration
 │   ├── requirements.txt           # Python dependencies
 │   ├── .gitignore                # Git exclusions
 │   └── README.md                 # This documentation
-└── 📝 Logs
+└── Logs
     └── training.log              # Training session logs
 ```
 
-## 🔬 Advanced Feature Engineering (27 Features)
+## Advanced Feature Engineering (27 Features)
 
-### 📋 Input Features (19)
+### Input Features (19)
 **Property Basics:**
 - `bedrooms`, `bathrooms`, `square_feet`, `floor`, `building_age`
 
-**📍 Location Intelligence:**
-- `latitude`, `longitude`, `neighborhood`, `distance_to_subway`, `distance_to_downtown`
-- `neighborhood_crime_rate`, `nearby_restaurants`, `nearby_schools_rating`
+**Location Intelligence:**
+- `latitude`, `longitude`, `neighbourhood`, `distance_to_subway`, `distance_to_downtown`
+- `neighbourhood_crime_rate`, `nearby_restaurants`, `nearby_schools_rating`
 
-**🏢 Amenities & Building:**
+**Amenities & Building:**
 - `has_elevator`, `has_doorman`, `has_gym`, `has_parking`, `has_laundry`, `has_pool`
 - `pet_friendly`, `building_type`, `heating_type`
 
-### 🧮 Engineered Features (8)
-**💰 Economic Indicators:**
+### Engineered Features (8)
+**Economic Indicators:**
 - `price_per_sqft` - Value density metric
 - `bathroom_bedroom_ratio` - Layout efficiency
-- `sqft_per_room` - Space utilization
+- `sqft_per_room` - Space utilisation
 
-**📍 Location Scores:**
-- `manhattan_distance` - Proximity to Manhattan center
+**Location Scores:**
+- `manhattan_distance` - Proximity to Manhattan centre
 - `amenity_score` - Aggregate amenity rating (0-6)
-- `neighborhood_score` - Composite area desirability
+- `neighbourhood_score` - Composite area desirability
 
-**📊 Categorical Encodings:**
+**Categorical Encodings:**
 - `building_age_category` - new/modern/established/old
 - `floor_category` - low/mid/high/penthouse
+
+## Rich Analytics & Visualisations
 
 ## � Rich Analytics & Visualizations
 
 The system automatically generates comprehensive analysis during training:
 
-### 📊 **Data Intelligence**
+### **Data Intelligence**
 - **Distribution Analysis**: Rent histograms, feature correlations, outlier detection
-- **Geographic Mapping**: Interactive NYC rent heatmaps with neighborhood analysis
+- **Geographic Mapping**: Interactive NYC rent heatmaps with neighbourhood analysis
 - **Market Trends**: Price patterns by location, building age, and amenities
 
-### 🤖 **Model Performance**
+### **Model Performance**
 - **Algorithm Comparison**: 8-model performance benchmarking
-- **Prediction Quality**: Actual vs predicted scatter plots with R² visualization
+- **Prediction Quality**: Actual vs predicted scatter plots with R² visualisation
 - **Feature Impact**: XGBoost feature importance rankings and SHAP-style analysis
 
-### 📍 **Location Intelligence** 
+### **Location Intelligence** 
 - **Subway Proximity**: Distance impact on rental prices
-- **Neighborhood Scoring**: Crime rates vs rent correlations
-- **Manhattan Distance**: Premium pricing by proximity to city center
+- **Neighbourhood Scoring**: Crime rates vs rent correlations
+- **Manhattan Distance**: Premium pricing by proximity to city centre
 
-*All visualizations saved to `/visualizations/` directory after training*
+*All visualisations saved to `/visualisations/` directory after training*
 
-## 🛠️ Technical Stack
+## Technical Stack
 
-### 🧠 **Machine Learning**
+### **Machine Learning**
 - **Core**: scikit-learn 1.7.1, XGBoost 3.0.2, LightGBM 4.6.0
 - **Processing**: pandas 2.3.1, numpy for data manipulation
 - **Validation**: Train/test split, cross-validation, comprehensive metrics
 
-### 🌐 **Production API**
+### **Production API**
 - **Framework**: FastAPI 0.116.1 with automatic OpenAPI documentation
 - **Server**: uvicorn ASGI server for high-performance async handling
 - **Validation**: Pydantic models for request/response validation
 - **Monitoring**: Health checks, logging, error handling
 
-### 📊 **Visualization & Analysis**
+### **Visualisation & Analysis**
 - **Static Plots**: matplotlib 3.10.1, seaborn 0.13.2
-- **Interactive**: plotly 6.2.0 for dynamic visualizations
+- **Interactive**: plotly 6.2.0 for dynamic visualisations
 - **Geographic**: geopandas, folium for mapping and spatial analysis
 
-### 🔧 **Development & Deployment**
-- **Persistence**: joblib for model serialization
+### **Development & Deployment**
+- **Persistence**: joblib for model serialisation
 - **Logging**: Comprehensive training and API logging
 - **Reproducibility**: Fixed random seeds, versioned dependencies
 
@@ -291,12 +307,12 @@ python src/api.py  # Runs on http://localhost:8000
 
 **Docker Deployment:**
 ```bash
-# Create Dockerfile for containerized deployment
+# Create Dockerfile for containerised deployment
 # Ideal for cloud platforms (AWS, GCP, Azure)
 ```
 
 **Cloud Scaling:**
-- **AWS**: Lambda for serverless, ECS for containerized
+- **AWS**: Lambda for serverless, ECS for containerised
 - **GCP**: Cloud Run for auto-scaling API
 - **Azure**: Container Instances or App Service
 
@@ -314,10 +330,10 @@ python src/api.py  # Runs on http://localhost:8000
 
 3. **Data Pipeline Extensions**
    - Real-time MLS data integration
-   - Neighborhood crime data APIs
+   - Neighbourhood crime data APIs
    - Transit data for commute analysis
 
-## 🔮 Future Roadmap
+## Future Roadmap
 
 ### **Immediate Enhancements** (Next 30 days)
 - **Real Data Integration**: Zillow API, Census data
@@ -334,7 +350,7 @@ python src/api.py  # Runs on http://localhost:8000
 - **ROI Calculator**: Investment analysis tools
 - **Risk Assessment**: Market volatility predictions
 
-## 📝 Development & Contributing
+## Development & Contributing
 
 ### **Code Quality Standards**
 - **Type Hints**: Full Python type annotation
@@ -343,18 +359,18 @@ python src/api.py  # Runs on http://localhost:8000
 - **Logging**: Detailed training and prediction logs
 
 ### **Model Improvement Opportunities**
-1. **Feature Engineering**: Additional neighborhood characteristics
+1. **Feature Engineering**: Additional neighbourhood characteristics
 2. **Data Quality**: Real estate data validation pipelines
 3. **Model Architecture**: Deep learning experiments
 4. **Evaluation**: Additional regression metrics and validation
 
 ### **Contribution Areas**
 - **Data Sources**: Real estate API integrations
-- **Visualization**: Enhanced analytics dashboards
-- **Performance**: Model optimization and caching
+- **Visualisation**: Enhanced analytics dashboards
+- **Performance**: Model optimisation and caching
 - **Testing**: Unit tests and integration tests
 
-## 🏆 Business Impact
+## Business Impact
 
 ### **Use Cases Validated**
 - **Real Estate Agents**: Instant property valuation
@@ -368,9 +384,9 @@ python src/api.py  # Runs on http://localhost:8000
 - **Market Intelligence**: Data-driven pricing strategies
 - **Risk Reduction**: Accurate valuations prevent over/under-pricing
 
-## 📄 License & Contact
+## Licence & Contact
 
-**License**: MIT License - Open source for commercial and personal use
+**Licence**: MIT Licence - Open source for commercial and personal use
 
 **Contact**: 
 - **GitHub**: [@theredplanetsings](https://github.com/theredplanetsings)
@@ -378,6 +394,6 @@ python src/api.py  # Runs on http://localhost:8000
 
 ---
 
-**🏠 Built with precision for real estate intelligence**
+**Built with precision for real estate intelligence**
 
 *This system demonstrates production-ready machine learning for property valuation and serves as a foundation for comprehensive unit economics platforms in real estate.*

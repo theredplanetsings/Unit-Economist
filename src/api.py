@@ -43,8 +43,8 @@ class ApartmentFeatures(BaseModel):
     has_laundry: bool
     has_pool: bool
     pet_friendly: bool
-    neighborhood: str
-    neighborhood_crime_rate: float
+    neighbourhood: str
+    neighbourhood_crime_rate: float
     distance_to_subway: float
     distance_to_downtown: float
     nearby_restaurants: int
