@@ -1,6 +1,6 @@
 # Unit-Economist: Apartment Rent Prediction System
 
-This system implements state-of-the-art machine learning models to predict apartment rental prices with exceptional accuracy. The XGBoost model achieves **97.31% R² score** with only **$166.99 RMSE**, making it suitable for real-world deployment in real estate applications.
+This system implements state-of-the-art machine learning models to predict apartment rental prices with exceptional accuracy.
 
 ### Key Achievements
 
