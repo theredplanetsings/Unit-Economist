@@ -1,12 +1,6 @@
 # Unit-Economist: Apartment Rent Prediction System
 
-A production-ready machine learning system for predicting apartment rent prices with **97.31% accuracy**. Built - **`GET /docs`** - Interactiv   └── visualisations/
-       ├── data_distribution.png   # Dataset analysis
-       ├── model_comparison.png    # Performance comparison
-       ├── xgboost_predictions.png # Prediction vs actual
-       ├── xgboost_feature_importance.png
-       ├── price_trends.png       # Market analysis
-       └── rent_map.html          # Interactive NYC mapocumentation
+A production-ready machine learning system for predicting apartment rent prices with **97.31% accuracy**. Built - **`GET /docs`** - Interactive API documentation
 
 ## Project Archite## Rich Analytics & Visualisations
 
@@ -198,7 +192,7 @@ Unit-Economist/
 │   │   ├── feature_engineer.pkl   # Fitted preprocessing pipeline
 │   │   ├── *.pkl                  # All trained models
 │   │   └── training_summary.txt   # Performance metrics report
-│   └── visualizations/
+│   └── visualisations/
 │       ├── data_distribution.png   # Dataset analysis
 │       ├── model_comparison.png    # Performance comparison
 │       ├── xgboost_predictions.png # Prediction vs actual
