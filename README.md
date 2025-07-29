@@ -164,7 +164,7 @@ print(f"Predicted Monthly Rent: ${result['predicted_rent']:,.2f}")
 - **`POST /batch_predict`** - Multiple apartments prediction
 - **`GET /docs`** - Interactive API documentation
 
-## � Project Architecture
+## Project Architecture
 
 ```
 Unit-Economist/
@@ -231,8 +231,6 @@ Unit-Economist/
 
 ## Rich Analytics & Visualisations
 
-## � Rich Analytics & Visualizations
-
 The system automatically generates comprehensive analysis during training:
 
 ### **Data Intelligence**
@@ -275,9 +273,9 @@ The system automatically generates comprehensive analysis during training:
 - **Logging**: Comprehensive training and API logging
 - **Reproducibility**: Fixed random seeds, versioned dependencies
 
-## � Production Deployment & Scaling
+## Production Deployment & Scaling
 
-### **Current State: Production Ready** ✅
+### **Current State: Production Ready**
 - **API Service**: Tested and validated prediction endpoint
 - **Model Pipeline**: Complete data → features → prediction workflow
 - **Error Handling**: Robust validation and error responses
@@ -376,8 +374,6 @@ python src/api.py  # Runs on http://localhost:8000
 
 **Contact**: 
 - **GitHub**: [@theredplanetsings](https://github.com/theredplanetsings)
-- **Project**: [Unit-Economist](https://github.com/theredplanetsings/Unit-Economist)
-
 ---
 
 **Built with precision for real estate intelligence**
