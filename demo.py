@@ -75,7 +75,7 @@ def demo_prediction_pipeline():
             'bedrooms': 1, 'bathrooms': 1, 'square_feet': 600, 'floor': 2,
             'building_age': 25, 'latitude': 40.7589, 'longitude': -73.9851,
             'has_elevator': False, 'has_doorman': False, 'has_gym': False,
-            'has_parking': False, 'pet_friendly': False, 'neighborhood_crime_rate': 6.0,
+            'has_parking': False, 'pet_friendly': False, 'neighbourhood_crime_rate': 6.0,
             'distance_to_subway': 0.8, 'distance_to_downtown': 12, 'nearby_restaurants': 8,
             'nearby_schools_rating': 6.5, 'building_type': 'apartment', 'heating_type': 'radiator'
         },
@@ -83,7 +83,7 @@ def demo_prediction_pipeline():
             'bedrooms': 3, 'bathrooms': 2.5, 'square_feet': 1500, 'floor': 15,
             'building_age': 5, 'latitude': 40.7505, 'longitude': -73.9934,
             'has_elevator': True, 'has_doorman': True, 'has_gym': True,
-            'has_parking': True, 'pet_friendly': True, 'neighborhood_crime_rate': 2.0,
+            'has_parking': True, 'pet_friendly': True, 'neighbourhood_crime_rate': 2.0,
             'distance_to_subway': 0.1, 'distance_to_downtown': 3, 'nearby_restaurants': 35,
             'nearby_schools_rating': 9.2, 'building_type': 'condo', 'heating_type': 'central'
         }
@@ -120,7 +120,7 @@ def demo_prediction_pipeline():
     print("\\nNext steps:")
     print("• Run 'python train.py' for full model training and evaluation")
     print("• Run 'python src/api.py' to start the prediction API server")
-    print("• Check the visualizations folder for detailed analysis plots")
+    print("• Check the visualisations folder for detailed analysis plots")
 
 def demo_cost_prediction():
     """Demo for predicting both rent and operational costs."""

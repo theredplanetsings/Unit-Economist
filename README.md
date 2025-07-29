@@ -55,7 +55,7 @@ This will:
 - Generate synthetic NYC apartment data (1000 samples)
 - Train 8 different ML models
 - Save the best model (XGBoost) and fitted preprocessing pipeline
-- Create comprehensive visualizations and analysis reports
+- Create comprehensive visualisations and analysis reports
 - Output: **Best model achieves 97.31% accuracy**
 
 ### 3. Start Production API
@@ -117,8 +117,8 @@ curl -X POST "http://localhost:8000/predict" \
     "has_doorman": false,
     "has_elevator": true,
     "pet_friendly": true,
-    "neighborhood": "Manhattan",
-    "neighborhood_crime_rate": 3.2,
+    "neighbourhood": "Manhattan",
+    "neighbourhood_crime_rate": 3.2,
     "distance_to_subway": 0.3,
     "distance_to_downtown": 2.1,
     "nearby_restaurants": 45,
@@ -156,8 +156,8 @@ apartment = {
     "has_doorman": False,
     "has_elevator": True,
     "pet_friendly": True,
-    "neighborhood": "Manhattan",
-    "neighborhood_crime_rate": 3.2,
+    "neighbourhood": "Manhattan",
+    "neighbourhood_crime_rate": 3.2,
     "distance_to_subway": 0.3,
     "distance_to_downtown": 2.1,
     "nearby_restaurants": 45,
