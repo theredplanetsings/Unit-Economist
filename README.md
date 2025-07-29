@@ -1,9 +1,5 @@
 # Unit-Economist: Apartment Rent Prediction System
 
-A production-ready machine learning system for predicting apartment rent prices with **97.31% accuracy**. Built as a comprehensive unit economics platform foundation for real estate pricing, market analysis, and rental optimisation.
-
-## Project Overview
-
 This system implements state-of-the-art machine learning models to predict apartment rental prices with exceptional accuracy. The XGBoost model achieves **97.31% R² score** with only **$166.99 RMSE**, making it suitable for real-world deployment in real estate applications.
 
 ### Key Achievements
