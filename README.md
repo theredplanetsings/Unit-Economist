@@ -1,14 +1,6 @@
 # Unit-Economist: Apartment Rent Prediction System
 
-A production-ready machine learning system for predicting apartment rent prices with **97.31% accuracy**. Built - **`GET /docs`** - Interactive API documentation
-
-## Project Archite## Rich Analytics & Visualisations
-
-The system a## Production Deployment & Scaling
-
-### **Current State: Production Ready**
-- **API Service**: Tested and validated prediction endpoint
-- **Model Pipeline**: Complete data to features to prediction workflowtically generates comprehensive analysis during training:a comprehensive unit economics platform foundation for real estate pricing, market analysis, and rental optimisation.
+A production-ready machine learning system for predicting apartment rent prices with **97.31% accuracy**. Built as a comprehensive unit economics platform foundation for real estate pricing, market analysis, and rental optimisation.
 
 ## Project Overview
 
