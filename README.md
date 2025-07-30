@@ -1,6 +1,6 @@
 # Unit-Economist: Apartment Rent Prediction System
 
-This system implements state-of-the-art machine learning models to predict apartment rental prices with exceptional accuracy.
+This system implements major machine learning models to predict apartment rental prices with exceptional accuracy.
 
 ### Key Achievements
 
