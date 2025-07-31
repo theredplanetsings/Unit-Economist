@@ -434,7 +434,7 @@ python src/api.py  # Runs on http://localhost:8000
 
 ## Licence & Contact
 
-**Licence**: MIT Licence - Open source for commercial and personal use
+**Licence**: Creative Commons Zero v1.0 Universal (CC0) - Public domain dedication for maximum freedom
 
 **Contact**: 
 - **GitHub**: [@theredplanetsings](https://github.com/theredplanetsings)
