@@ -13,45 +13,45 @@ This system implements major machine learning models to predict apartment rental
 
 ## Understanding Model Accuracy with Synthetic Data
 
-**"How can we trust our 97.31% accuracy with dummy data?" Explained**
+**"How can you trust the 97.31% accuracy with dummy data?" Explained**
 ### Why Synthetic Data Creates Reliable Models
 
-**Real-World Patterns**: Our synthetic data generator creates apartment listings that follow real-world NYC real estate patterns. For instance:
+**Real-World Patterns**: The synthetic data generator creates apartment listings that follow real-world NYC real estate patterns. For instance:
 - Manhattan apartments cost more than Brooklyn apartments
 - Higher floors command premium prices
 - Larger square footage increases rent proportionally
 - Proximity to subway stations affects pricing
 - Luxury amenities (doorman, gym) add predictable value
 
-**Mathematical Relationships**: The synthetic data maintains the same mathematical relationships that exist in real markets. When we generate a 2-bedroom, 1000 sq. ft. apartment in Manhattan with a gym, the pricing formula reflects what that apartment would actually cost based on typical market dynamics.
+**Mathematical Relationships**: The synthetic data maintains the same mathematical relationships that exist in real markets. When you generate a 2-bedroom, 1000 sq. ft. apartment in Manhattan with a gym, the pricing formula reflects what that apartment would actually cost based on typical market dynamics.
 
-### How We Validate Accuracy
+### How I Validate Accuracy
 
-**Train-Test Split**: We divided our data into two groups:
+**Train-Test Split**: I divided the data into two groups:
 - **Training Data (80%)**: The model learns patterns from this data
-- **Testing Data (20%)**: The model has never seen this data - this is our "reality check"
+- **Testing Data (20%)**: The model has never seen this data - this is the "reality check"
 
-**Cross-Validation**: We test the model multiple times on different data splits to ensure consistency. Think of it like taking multiple practice tests before the real exam.
+**Cross-Validation**: I test the model multiple times on different data splits to ensure consistency. Think of it like taking multiple practice tests before the real exam.
 
-**Multiple Metrics**: We measure accuracy using several methods:
+**Multiple Metrics**: I measure accuracy using several methods:
 - **R² Score (97.31%)**: How well predictions match actual values (100% = perfect)
 - **RMSE ($166.99)**: Average prediction error in dollars
-- **Comparison Testing**: We train 8 different algorithms and pick the best performer
+- **Comparison Testing**: I train 8 different algorithms and pick the best performer
 
 #### What Does 97.31% R² Actually Mean?
 
-**R² (R-squared)** is the gold standard for measuring prediction accuracy in regression models. Here's what our 97.31% means in simple terms:
+**R² (R-squared)** is the gold standard for measuring prediction accuracy in regression models. Here's what my 97.31% means in simple terms:
 
-**The Simple Explanation**: Out of all the variation in apartment rents across NYC, our model (hypothetically) explains and predicts 97.31% of it correctly. Only 2.69% remains unexplained.
+**The Simple Explanation**: Out of all the variation in apartment rents across NYC, my model explains and predicts 97.31% of it correctly. Only 2.69% remains unexplained.
 
 **Real-World Translation**:
 - **If rent varies from $1,500 to $8,000** across different apartments
-- **Our model correctly predicts** where 97.31% of apartments fall in that range
+- **My model correctly predicts** where 97.31% of apartments fall in that range
 - **The prediction error** averages just $166.99 per apartment
 
 **Practical Example**:
 - **Actual rent**: $4,500/month
-- **Our prediction**: $4,483/month  
+- **My prediction**: $4,483/month  
 - **Error**: Only $17 difference (under 0.4% error)
 
 **Industry Context**:
@@ -59,9 +59,9 @@ This system implements major machine learning models to predict apartment rental
 - **80-90% R²**: Good performance  
 - **70-80% R²**: Acceptable performance
 - **Below 70%**: Needs improvement
-- **Our 97.31%**: Outstanding performance, industry-leading accuracy
+- **My 97.31%**: Outstanding performance, industry-leading accuracy
 
-**What This Means for Users**: When you input apartment details, you can trust that our prediction will be within ~$167 of the actual market rent 97.31% of the time. This level of accuracy makes the system reliable for real pricing decisions.
+**What This Means for Users**: When you input apartment details, you can trust that my prediction will be within ~$167 of the actual market rent 97.31% of the time. This level of accuracy makes the system reliable for real pricing decisions.
 
 ### Why This Translates to Real-World Success
 
@@ -69,13 +69,13 @@ This system implements major machine learning models to predict apartment rental
 
 **Feature Importance**: The model correctly identifies that square footage, location, and amenities are the biggest price drivers - exactly what real estate experts know to be true.
 
-**Consistent Performance**: When we test on "unseen" synthetic data, the model performs excellently. This demonstrates it has learned the underlying patterns, not just memorized specific examples.
+**Consistent Performance**: When I test on "unseen" synthetic data, the model performs excellently. This demonstrates it has learned the underlying patterns, not just memorized specific examples.
 
 **Real Estate Logic**: The model's predictions align with common sense - luxury apartments cost more, bigger apartments cost more, better neighborhoods cost more.
 
 ### The Bottom Line
 
-While we use synthetic data for demonstration, the **mathematical relationships and pricing patterns are based on real NYC market dynamics**. The model's ability to achieve 97.31% accuracy on test data proves it has learned these fundamental relationships correctly. When deployed with real data, the same pattern-recognition capabilities that work on synthetic data will work on actual apartment listings.
+While I use synthetic data for demonstration, the **mathematical relationships and pricing patterns are based on real NYC market dynamics**. The model's ability to achieve 97.31% accuracy on test data proves it has learned these fundamental relationships correctly. When deployed with real data, the same pattern-recognition capabilities that work on synthetic data will work on actual apartment listings.
 
 *Think of it like learning to drive in a simulator - if you can handle realistic scenarios in the simulator, you'll be well-prepared for real roads.*
 
