@@ -16,7 +16,7 @@ This system implements major machine learning models to predict apartment rental
 **"How can we trust the 97.31% accuracy with dummy data?" Explained**
 ### Why Synthetic Data Creates Reliable Models
 
-**Real-World Patterns**: The synthetic data generator creates apartment listings that follow real-world NYC real estate patterns. For instance:
+**Real-World Patterns**: The synthetic data generator creates apartment listings that follow real-world NYC real estate patterns. For example:
 - Manhattan apartments cost more than Brooklyn apartments
 - Higher floors command premium prices
 - Larger square footage increases rent proportionally
