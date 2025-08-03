@@ -97,7 +97,7 @@ pip install -r requirements.txt
 ### 2. Train Models (Required First Step)
 
 ```bash
-# Train all models and generate the complete pipeline
+# Trains all models and generate the complete pipeline
 python train.py
 ```
 
@@ -111,7 +111,7 @@ This will:
 ### 3. Start Production API
 
 ```bash
-# Launch the prediction API server
+# Launches the prediction API server
 python src/api.py
 ```
 
