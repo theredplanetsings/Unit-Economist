@@ -312,7 +312,7 @@ The system automatically generates comprehensive analysis during training:
 - **Neighbourhood Scoring**: Crime rates vs rent correlations
 - **Manhattan Distance**: Premium pricing by proximity to city centre
 
-*All visualisations saved to `/visualisations/` directory after training*
+*All visualisations saved to `/visualisations/` directory post-training*
 
 ## Technical Stack
 
